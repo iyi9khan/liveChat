@@ -28,11 +28,11 @@ import Registration from "./pages/Registration";
 
 function App() {
   return (
-    <BrowserRouter basename="/liveChat/">
+    <HashRouter basename="/liveChat/">
       <Routes>
         <Route path="/registration" element={<Registration />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
