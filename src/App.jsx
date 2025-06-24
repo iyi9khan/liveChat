@@ -28,7 +28,7 @@ import Registration from "./pages/Registration";
 
 function App() {
   return (
-    <BrowserRouter basename="/liveChat/">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/registration" element={<Registration />} />
       </Routes>
